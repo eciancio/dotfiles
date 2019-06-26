@@ -129,3 +129,5 @@ if ! shopt -oq posix; then
 fi
 export WDHOME=$HOME/.wd
 source $WDHOME/wd.sh
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
