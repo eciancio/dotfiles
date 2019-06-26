@@ -1,6 +1,10 @@
-mkdir ~/.vim
+# set bashrc
+sudo cp bashrc ~/.bashrc
+source ~/.bashrc
+
 
 # install newst vim version 
+mkdir ~/.vim
 sudo apt-get --assume-yes update
 sudo apt-get  --assume-yes install libncurses5-dev libgnome2-dev libgnomeui-dev \
         libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
@@ -27,3 +31,16 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # install plugins
 vim -i NONE -c VundleUpdate -c quitall
+
+# Compile youCompleteME
+sudo apt-get --assume-yes install cmake
+sudo ~/.vim/bundle/youcompleteme/install.py
+
+# install go
+wget https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz
+sudo tar -xvf go1.12.6.linux-amd64.tar.gudo 
+mv go /usr/local
+
+# install tmux
+sudo apt-get --assume-yes install tmux
+sudo cp tmux.conf ~/.tmux.conf
