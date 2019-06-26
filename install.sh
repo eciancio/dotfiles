@@ -2,9 +2,12 @@
 sudo cp bashrc ~/.bashrc
 source ~/.bashrc
 
+# set vimrc
+sudo cp vimrc ~/.vimrc
 
 # install newst vim version 
 mkdir ~/.vim
+
 sudo apt-get --assume-yes update
 sudo apt-get  --assume-yes install libncurses5-dev libgnome2-dev libgnomeui-dev \
         libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
