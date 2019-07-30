@@ -36,6 +36,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -i NONE -c VundleUpdate -c quitall
 
 # Compile youCompleteME
+sudo apt-get install build-essential
 sudo apt-get --assume-yes install cmake
 sudo ~/.vim/bundle/youcompleteme/install.py
 
